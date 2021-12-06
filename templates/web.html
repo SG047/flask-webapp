@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Welcome</title>
+    </head>
+
+</html>
+<body>
+    <h1>Welcome to flask web page</h1>
+    <p>This is a smaple web page for falsk
+        <em>Getting started with flask</em> 
+    {% if message %}
+    <p>
+        {{message}}
+    </p>
+    {% else %}
+    <p>The below is the list of the fruits:</p>
+    {% endif %}
+
+    <ul>
+        {% for fruits in fruits %}
+        <li>{{fruits}}</li>
+        {% endfor %}
+    </ul>
+</body>
